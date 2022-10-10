@@ -7,44 +7,46 @@ body {
   padding: 0;
   margin: 0;
   color: darkslategray;
-  background-color: azure;
 }
 #container {
-  width: 450px;
-  height: 450px;
-  padding: 1rem;
-  margin-top: 5rem;
+  width: 28rem;
+  height: 30rem;
+  padding: 1.1rem;
   background-color: aliceblue;
   border-radius: 1rem;
   border: 3px solid green;
   margin: auto;
 }
-.contents {
-  border: 2px solid red;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  margin-top: 0%;
+#content {
+  height: 18rem;
+  border: 2px solid green;
+  border-radius: 0.8rem;
 }
 p {
-  width: 410px;
+  width: 25rem;
   font-size: 3rem;
   text-align: right;
   padding: 0.5rem 0.5rem;
-  border: 1px solid black;
+  border: 3px solid green;
   border-radius: 0.8rem;
   background-color: aliceblue;
   margin-top: 0;
+  background-color: azure;
 }
 button {
   width: 5rem;
   height: 3rem;
-  text-align: center;
   font-size: 1.5rem;
+  text-align: center;
   border: 1px solid black;
   border-radius: 0.5rem;
   margin: 0.5rem;
+  background-color: azure;
 }
 button[id="0"] {
   width: 11.4rem;
+}
+button[id="="] {
+  font-weight: bold;
+  background-color: cadetblue;
 }
