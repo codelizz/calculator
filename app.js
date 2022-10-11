@@ -48,16 +48,12 @@ document.querySelectorAll("button").forEach((each) => {
 
         let answer = allNumbers[0];
 
-        // allNumbers.push(number);
-        // number = "";
-        // signs.push(value);
         break;
       case "=":
         allNumbers.push(parseInt(number));
 
         number = "";
         signs.push(value);
-      // display = "";
     }
   });
 });
