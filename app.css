@@ -13,7 +13,7 @@ body {
   margin-top: 3rem;
 }
 #container {
-  width: 27.8rem;
+  width: 27rem;
   height: 31rem;
   padding: 1.1rem;
   background-color: aliceblue;
@@ -21,9 +21,10 @@ body {
   border: 3px solid green;
 }
 #content {
-  height: 20rem;
+  height: 19em;
   border: 2px solid green;
   border-radius: 0.8rem;
+  margin: auto;
 }
 p {
   width: 25rem;
@@ -37,8 +38,8 @@ p {
   background-color: azure;
 }
 button {
-  width: 5rem;
-  height: 3rem;
+  width: 4.5rem;
+  height: 2.5rem;
   font-size: 1.5rem;
   text-align: center;
   border: 1px solid black;
