@@ -20,8 +20,11 @@ body {
   border-radius: 1rem;
   border: 3px solid green;
 }
+h1 {
+  text-align: center;
+}
 #content {
-  height: 19em;
+  height: 80;
   border: 2px solid green;
   border-radius: 0.8rem;
   margin: auto;
