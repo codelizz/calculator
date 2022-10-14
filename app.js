@@ -1,7 +1,6 @@
 let number = "",
   allNumbers = [],
   signs = [];
-
 document.querySelectorAll("button").forEach((each) => {
   each.addEventListener("click", function () {
     let value = this.innerText;
@@ -45,12 +44,9 @@ document.querySelectorAll("button").forEach((each) => {
           numbers = "";
         }
 
-        let answer = allNumbers[0];
+        let answer = allNumbers[0] {};
 
-        // allNumbers.push(number);
-        // number = "";
-        // signs.push(value);
-        break;
+        for (let x in allNumbers) break;
       case "=":
         allNumbers.push(parseInt(number));
 
