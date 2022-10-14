@@ -51,7 +51,7 @@ button {
   background-color: azure;
 }
 button[id="zero"] {
-  width: 11.4rem;
+  width: 10.5rem;
 }
 button[id="equal"] {
   font-weight: bold;

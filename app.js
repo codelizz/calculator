@@ -1,16 +1,17 @@
 let number = "",
   allNumbers = [],
   signs = [];
+
 document.querySelectorAll("button").forEach((each) => {
   each.addEventListener("click", function () {
-    let value = this.innertext;
-    let display = document.getElementById("display");
-
+    let value = this.innerText;
+    const display = document.getElementById("display").innerText;
     if (display === "0") {
-      display.innerText = value;
+      document.getElementById("display").innerText = value;
     } else {
-      display.innerText += value;
+      document.getElementById("display").innerText += value;
     }
+
     switch (value) {
       case "0":
       case "1":
@@ -27,22 +28,35 @@ document.querySelectorAll("button").forEach((each) => {
         } else {
           number += value;
         }
-
         break;
-      case "+":
+      case "C":
+        document.getElementById("clean").addEventListener("click", function () {
+          allNumbers.pop(numbers);
+        });
+        break;
+      case "/":
       case "*":
       case "-":
-      case "/":
-        if (value === "+" || signs === "*" || signs === "-" || signs === "/") {
-          number = "";
-          signs.push(value);
-          allNumbers.push(number);
+      case "+":
+        if (signs === "+") {
+          value += "+";
+          signs.push(parseInt("+"));
+          allNumbers.push(parseInt(numbers));
+          numbers = "";
         }
-        console.log(signs);
+
+        let answer = allNumbers[0];
+
+        // allNumbers.push(number);
+        // number = "";
+        // signs.push(value);
         break;
       case "=":
+        allNumbers.push(parseInt(number));
+
         number = "";
-        let answer = allNumbers[0];
+        signs.push(value);
+      // display = "";
     }
   });
 });
