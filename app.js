@@ -44,7 +44,7 @@ document.querySelectorAll("button").forEach((each) => {
           numbers = "";
         }
 
-        let answer = allNumbers[0] {};
+        let answer = allNumbers[0];
 
         for (let x in allNumbers) break;
       case "=":
